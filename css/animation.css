@@ -1,0 +1,28 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fillProgress {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--progress);
+    }
+}
+
+.animate__fadeInUp {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Animate progress bars */
+.progress-fill {
+    animation: fillProgress 1s forwards;
+}
